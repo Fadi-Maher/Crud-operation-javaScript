@@ -1,0 +1,170 @@
+/* General reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main container settings */
+main {
+    margin-top: 40px;
+    font-family: Arial, sans-serif; /* Set a font for better readability */
+}
+
+/* Header styling */
+header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Search div styling */
+.search_div {
+    background-color: #A8E6CE; /* Softer green for the background */
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.search_div input {
+    width: 80%;
+    border: none;
+    background-color: #D0F0C0; /* Lighter green for input */
+    font-size: 14px;
+    padding: 8px; /* Increase padding for better touch targets */
+    border-radius: 4px;
+}
+
+/* Add new contact button styling */
+.add_div button {
+    padding: 12px 60px;
+    background-color: #A8E6CE;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.add_div button:hover {
+    background-color: #81C8B7; /* Darker shade on hover */
+}
+
+/* Modal for adding new contact */
+.overlay {
+    display: none; /* Hide modal initially */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.addNewContact {
+    display: none; /* Hide modal content initially */
+    width: 300px; /* Fixed width for the modal */
+    background-color: #FFFBFE; /* Off-white background */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 15px;
+    padding: 40px;
+    border: 1px solid #ccc; /* Light border */
+    z-index: 2;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.addNewContact input {
+    width: 100%;
+    margin-top: 15px; /* Increased margin for better spacing */
+    padding: 12px; /* Increased padding for input fields */
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light border */
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+.addNewContact input:focus {
+    border-color: #A8E6CE; /* Change border color on focus */
+}
+
+/* Save and Close button styles */
+.save-btn {
+    background-color: #A8E6CE;
+    padding: 12px;
+    margin-top: 15px; /* Increased margin for better spacing */
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: white; /* White text for contrast */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.save-btn:hover {
+    background-color: #81C8B7; /* Darker shade on hover */
+}
+
+.addNewContact .close {
+    font-size: 24px;
+    color: #FF6B6B; /* Red color for close button */
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    cursor: pointer;
+}
+
+/* Table section styling */
+.table_section {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px; /* Increase padding for table cells */
+    text-align: left;
+    border: 1px solid #ddd; /* Light border for cells */
+}
+
+th {
+    background-color: #A8E6CE; /* Header background */
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #F9F9F9; /* Zebra striping for rows */
+}
+
+tr:hover {
+    background-color: #E8F5E9; /* Highlight row on hover */
+}
+
+/* Icons styling */
+.fa-edit, .fa-trash {
+    cursor: pointer;
+    color: #3A3A3A; /* Dark color for icons */
+}
+
+.fa-edit:hover {
+    color: #FFB300; /* Change color on hover */
+}
+
+.fa-trash:hover {
+    color: #FF6B6B; /* Change color on hover */
+}
